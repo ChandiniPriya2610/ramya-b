@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4a90e2, #ffffff);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.search-bar input, .search-bar select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    padding: 10px 10px;
+    border-radius: 18px;
+    border: none;
+    background: #37c6ed;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #29bfda;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(235, 239, 240, 0.85);
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1.5s ease-in-out;
+    margin-top: 50px; /* Adjusted for spacing after the search bar */
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.temp {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #43bcf0;
+}
+
+.summary {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #4fb7ef;
+}
+
+.location {
+    font-size: 1.3rem;
+    color: #23d7f7;
+    margin-bottom: 20px;
+}
+
+.extra-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 1.1rem;
+    color: #4ddbff;
+}
+
+.extra-info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.extra-info div span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.separator {
+    height: 2px;
+    width: 100%;
+    background: #000000;
+    opacity: 0.7;
+    margin: 20px 0;
+}
+
+.loading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2fbdd3;
+}

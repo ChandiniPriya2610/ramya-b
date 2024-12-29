@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dynamic Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="header">
+        <h1>WEATHERLY</h1>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="container">
+        <div class="icon">---</div>
+        <div class="temp">-°C</div>
+        <div class="summary">----</div>
+        <div class="location"></div>
+
+        <div class="separator"></div>
+
+        <div class="extra-info">
+            <div>
+                <span class="humidity">--%</span>
+                <p>Humidity</p>
+            </div>
+            <div>
+                <span class="wind">-- km/h</span>
+                <p>Wind Speed</p>
+            </div>
+            <div>
+                <span class="pressure">-- hPa</span>
+                <p>Pressure</p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="extra-info">
+            <div>
+                <span class="sunrise">--:--</span>
+                <p>Sunrise</p>
+            </div>
+            <div>
+                <span class="sunset">--:--</span>
+                <p>Sunset</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
